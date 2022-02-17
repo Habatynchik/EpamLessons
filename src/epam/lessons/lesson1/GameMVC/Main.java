@@ -1,4 +1,4 @@
-package GameMVC;
+package epam.lessons.lesson1.GameMVC;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package GameMVC;
+package epam.lessons.lesson1.GameMVC;
 
 import java.util.ArrayList;
 import java.util.List;
