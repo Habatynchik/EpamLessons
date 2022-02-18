@@ -22,7 +22,7 @@ public class Model {
 
     public int rand() {
         this.max = RAND_MAX;
-        this.randomNumber = (int) (Math.random() * (RAND_MAX + 1));
+        this.randomNumber = (int) (Math.random() * (RAND_MAX - 1)) + 1;
         return this.randomNumber;
     }
 

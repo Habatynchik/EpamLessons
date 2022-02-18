@@ -15,7 +15,7 @@ public class Controller {
 
         Scanner scanner = new Scanner(System.in);
 
-        model.rand(0, 100);
+        model.rand();
 
         int playerNumber;
 
@@ -29,7 +29,7 @@ public class Controller {
 
             playerNumber = scanner.nextInt();
 
-            if (playerNumber > model.getMax() || playerNumber < model.getMin()) {
+            if (playerNumber >= model.getMax() || playerNumber <= model.getMin()) {
                 view.printErrorMessage(model.getMin(), model.getMax());
                 continue;
             }
