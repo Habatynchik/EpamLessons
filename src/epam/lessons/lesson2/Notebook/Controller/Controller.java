@@ -4,7 +4,9 @@ import epam.lessons.lesson2.Notebook.Model.Entity.Notebook;
 import epam.lessons.lesson2.Notebook.Model.Model;
 import epam.lessons.lesson2.Notebook.View.View;
 
-public class Controller implements Regex {
+import java.util.Scanner;
+
+public class Controller {
     private Model model;
     private View view;
 
@@ -13,27 +15,12 @@ public class Controller implements Regex {
         this.view = view;
     }
 
-    public void launch(){
 
-        Notebook notebook = newNotebookInstance(notebookService);
+    public void launch() {
 
-        System.out.println(notebook);
+        Validator validator = new Validator(new Scanner(System.in), this.view);
+        validator.startValidation();
+
     }
 
-    public Notebook newNotebookInstance(NotebookInstance notebookInstance) {
-        Notebook notebook = null;
-
-        while (true) {
-            try {
-                notebook = new Notebook(notebookService.getName(), notebookService.getLogin());
-                break;
-            } catch (NotUniqueLoginException e) {
-                e.printStackTrace();
-                System.out.println("Not Unique Login " + e.getLoginData());
-                notebookService.inputLogin();
-            }
-        }
-
-        return notebook;
-    }
 }

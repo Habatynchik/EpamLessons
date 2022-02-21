@@ -6,7 +6,7 @@ public class Model {
 
     Notebook notebook;
 
-    boolean writeInstanceToDB(Notebook notebook) {
+    public boolean writeInstanceToDB(Notebook notebook) {
         return DB.INSERT(notebook);
     }
 

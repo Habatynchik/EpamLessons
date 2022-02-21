@@ -2,7 +2,6 @@ package epam.lessons.lesson2.Notebook.Model;
 
 import epam.lessons.lesson2.Notebook.Model.Entity.Notebook;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
