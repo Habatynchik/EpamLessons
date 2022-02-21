@@ -1,12 +1,12 @@
 package epam.lessons.lesson2.Notebook.Model;
 
-import epam.lessons.lesson2.Notebook.Model.Entity.Notebook;
+import epam.lessons.lesson2.Notebook.Model.Entity.Note;
 
 public class Model {
 
-    Notebook notebook;
+    Note notebook;
 
-    public boolean writeInstanceToDB(Notebook notebook) {
+    public boolean writeInstanceToDB(Note notebook) {
         return DB.INSERT(notebook);
     }
 

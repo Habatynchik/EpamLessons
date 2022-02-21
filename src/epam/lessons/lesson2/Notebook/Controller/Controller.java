@@ -1,6 +1,5 @@
 package epam.lessons.lesson2.Notebook.Controller;
 
-import epam.lessons.lesson2.Notebook.Model.Entity.Notebook;
 import epam.lessons.lesson2.Notebook.Model.Model;
 import epam.lessons.lesson2.Notebook.View.View;
 

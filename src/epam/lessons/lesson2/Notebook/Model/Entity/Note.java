@@ -7,7 +7,7 @@ package epam.lessons.lesson2.Notebook.Model.Entity;
  * @version 1.0
  * @since 2022-02-21
  */
-public class Notebook {
+public class Note {
     private String surname;
     private String name;
     private String secondName;
@@ -18,7 +18,7 @@ public class Notebook {
     /**
      * Initialize new object of Notebook without params.
      */
-    public Notebook() {
+    public Note() {
     }
 
     /**
@@ -30,7 +30,7 @@ public class Notebook {
      * @param phoneNumber representing phoneNumber
      * @param email representing email
      */
-    public Notebook(String surname, String name, String secondName, String phoneNumber, String email) {
+    public Note(String surname, String name, String secondName, String phoneNumber, String email) {
         this.surname = surname;
         this.name = name;
         this.secondName = secondName;
