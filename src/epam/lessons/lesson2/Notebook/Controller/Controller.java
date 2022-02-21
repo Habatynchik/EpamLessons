@@ -6,8 +6,8 @@ import epam.lessons.lesson2.Notebook.View.View;
 import java.util.Scanner;
 
 public class Controller {
-    private Model model;
-    private View view;
+    private final Model model;
+    private final View view;
 
     public Controller(Model model, View view) {
         this.model = model;
@@ -17,8 +17,12 @@ public class Controller {
 
     public void launch() {
 
-        Validator validator = new Validator(new Scanner(System.in), this.view);
-        validator.startValidation();
+        Scanner scanner = new Scanner(System.in);
+        InputNote inputNoteInNoteBook = new InputNote(scanner, this.view);
+        inputNoteInNoteBook.startValidation();
+
+        SaveNote safeNote = new SaveNote(this.model, inputNoteInNoteBook);
+        safeNote.save();
 
     }
 

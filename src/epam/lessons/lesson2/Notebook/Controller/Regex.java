@@ -8,6 +8,8 @@ public interface Regex {
 
     String REGEX_NAME_UKR = "^[А-ЯІЇЄ][а-яіїє']{1,20}$";
 
+    String REGEX_SECOND_NAME_UKR = "^[А-ЯІЇЄ][а-яіїє']{1,20}$";
+
     String REGEX_SECOND_NAME = "^([a-z]|[A-Z]| ){1,20}";
 
     String REGEX_PHONE_NUMBER = "^([+]\\d{2})?\\d{10}$";
