@@ -1,6 +1,6 @@
-package epam.lessons.lesson2.Notebook.Model;
+package epam.lessons.lesson2.Notebook.Controller;
 
-public class Regex {
+public interface Regex {
 
     String REGEX_SURNAME = "^([a-z]|[A-Z]){1,20}";
 
